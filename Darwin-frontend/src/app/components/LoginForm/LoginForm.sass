@@ -1,0 +1,139 @@
+.wrapper-login-form-component
+    display: flex
+    flex-direction: column
+    justify-content: flex-start
+    align-items: center
+    margin-top: 50px
+
+.title-login
+    text-align: center
+    font-size: 26px
+    color: #383838
+    font-weight: 400
+    margin: 20px 0
+    span
+        color: #2edf8c
+        text-decoration: none
+        font-weight: 400
+        cursor: pointer
+        &:hover
+            text-decoration: underline;
+
+.wrapper-login-form
+    display: flex
+    flex-direction: column
+    justify-content: flex-start
+    align-items: center
+    padding: 30px
+    border: 1px solid #CECECE
+    max-width: 500px
+    width: 500px
+    margin-bottom: 100px
+
+.wrapper-linkedin-login
+    display: flex
+    flex-direction: column
+    justify-content: flex-start
+    align-items: center
+    margin-bottom: 30px
+
+.wrapper-login-fields
+    display: flex
+    flex-direction: column
+    justify-content: flex-start
+    align-items: center
+    width: 100%
+    padding: 30px 20px
+    border-top: 1px solid #CECECE
+    .errors-login-form
+        align-self: flex-start
+        padding-left: 5px
+        min-height: 20px
+        font-size: 14px
+        color: #d61010
+    input.login-fields
+        width: calc(100% - 40px)
+        border: none
+        padding: 10px 15px
+        color: #383838
+        background-color: #E8E8E8
+        border-radius: 3px
+        font-size: 18px
+        font-weight: 300
+        &:focus
+            outline: none
+        &:not(:last-child)
+            margin-bottom: 20px
+        &::-webkit-input-placeholder,
+        &::-moz-placeholder,
+        &:-ms-input-placeholder,
+        &:-moz-placeholder
+            color: #767676;
+
+button.login   
+    color: #FFFFFF
+    background-color: #2edf8c
+    font-size: 18px
+    text-transform: uppercase
+    border: none
+    outline: none
+    padding: 15px 20px
+    min-width: 250px
+    border-radius: 4px
+    cursor: pointer
+    transition: .2s
+    &:hover
+        background-color: #27c77c
+
+p.forgot-password
+    font-size: 18px
+    color: #6a6a6a
+    font-weight: 400
+    margin: 20px 0 0 
+    cursor: pointer
+    &:hover
+        text-decoration: underline
+
+label.remember-me
+    display: flex
+    justify-content: center
+    align-items: center
+    text-align: center
+    font-size: 18px
+    color: #6a6a6a
+    font-weight: 400
+    margin: 20px 0
+    input
+        margin-right: 15px
+        width: 15px
+        height: 15px
+
+@media (max-width: 520px) 
+    .wrapper-login-form
+        padding: 20px 10px
+        width: 380px      
+
+@media (max-width: 430px)   
+    .wrapper-login-form-component
+        margin: 0
+
+    .title-login
+        font-size: 22px
+
+    .wrapper-login-form
+        width: 310px
+
+    button.login
+        padding: 10px 20px    
+        min-width: 200px
+
+    label.remember-me     
+        margin: 10px 0
+        font-size: 16px
+
+    p.forgot-password   
+        font-size: 16px
+        margin: 10px 0 0
+
+    .wrapper-login-fields
+        padding: 20px 20px    

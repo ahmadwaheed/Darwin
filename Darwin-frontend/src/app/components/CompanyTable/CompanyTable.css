@@ -1,0 +1,186 @@
+.wrapper-company-table-component {
+  width: 100%; }
+  .wrapper-company-table-component table, .wrapper-company-table-component th, .wrapper-company-table-component td {
+    border: 1px solid #dadad9;
+    border-collapse: collapse; }
+  .wrapper-company-table-component table {
+    width: 100%;
+    margin: 50px 0; }
+    .wrapper-company-table-component table thead tr th {
+      font-size: 16px;
+      font-weight: 300;
+      background-color: #93939D;
+      color: #ffffff;
+      padding: 10px; }
+    .wrapper-company-table-component table tbody tr:nth-child(even) {
+      background-color: #ededed; }
+    .wrapper-company-table-component table tbody tr td {
+      text-align: center;
+      padding: 10px;
+      color: #4e4b4b; }
+      .wrapper-company-table-component table tbody tr td.table-column-name {
+        text-align: left;
+        color: #0c0cb3;
+        text-decoration: underline;
+        cursor: pointer; }
+      .wrapper-company-table-component table tbody tr td.table-column-address {
+        text-align: left; }
+
+.not-found-companies-title {
+  text-align: center;
+  font-size: 32px;
+  font-weight: 300;
+  padding: 50px; }
+
+.dropdown__list {
+  position: absolute;
+  z-index: 1000;
+  background-color: white;
+  border-radius: .4rem;
+  max-height: 5rem;
+  list-style: none !important;
+  overflow: auto; }
+  .dropdown__list--right {
+    right: 0;
+    top: 100%;
+    width: 100%; }
+
+.dropdown__item {
+  font-size: 1.4rem; }
+
+.dropdown__link {
+  padding: .5em 0;
+  display: flex;
+  opacity: .8;
+  transition: opacity .3s; }
+  .dropdown__link:hover {
+    opacity: 1; }
+  .dropdown__link--selected {
+    font-weight: 500; }
+
+.header-class {
+  font-size: 16px;
+  font-weight: 300;
+  background-color: #93939D;
+  color: #ffffff;
+  padding: 10px; }
+
+.rt-td {
+  text-align: left;
+  font-family: Roboto;
+  font-size: 12px; }
+
+.rt-th {
+  background-color: rgba(0, 0, 0, 0.05);
+  color: rgba(0, 0, 0, 0.5);
+  font-family: Roboto;
+  font-weight: 600;
+  font-size: 12px; }
+
+.modal-tabbeds {
+  border-radius: .3rem; }
+  .modal-tabbeds__headers {
+    padding: 0 1.5rem;
+    background-image: linear-gradient(-225deg, #00c8b4 0%, #00c8b4 100%);
+    position: relative;
+    display: flex; }
+  .modal-tabbeds__close {
+    display: block;
+    position: absolute;
+    top: 1rem;
+    right: 2rem;
+    width: 2rem;
+    height: 2rem;
+    text-indent: -9999px;
+    background-image: url("../../../assets/images/icons/close-popup.svg");
+    background-size: cover; }
+  .modal-tabbeds__btns {
+    font-size: 1.3rem;
+    color: rgba(255, 255, 255, 0.8);
+    height: 4rem;
+    margin: 0 auto;
+    display: inline-flex;
+    align-items: center;
+    line-height: 1.2;
+    cursor: pointer; }
+
+.white-bottom {
+  border: 1px solid white; }
+
+.unstyled-list {
+  list-style: none !important; }
+
+.wrapper-advanced-column-btn {
+  flex-flow: row !important; }
+
+.column-btn {
+  margin-right: 0 !important;
+  cursor: pointer;
+  border: none;
+  color: #000 !important;
+  border-radius: 4px;
+  font-family: Roboto;
+  height: 36px;
+  min-width: 100px !important;
+  font-size: 14px !important;
+  font-weight: 500 !important;
+  padding: 0 !important;
+  background-color: rgba(0, 0, 0, 0.05) !important; }
+
+.icon-cls {
+  width: 1.28rem;
+  margin-right: 4px; }
+
+.btn-text {
+  display: inline-table;
+  margin-top: auto;
+  padding-bottom: 12px;
+  vertical-align: middle; }
+
+.ReactTable {
+  margin-top: 10px; }
+
+.wrapper-autocomplete-items {
+  position: absolute;
+  top: 40px;
+  background-color: #FFF;
+  border: 1px solid #CECECE;
+  width: calc(100% - 10px);
+  z-index: 99999999; }
+  .wrapper-autocomplete-items .autocomplete-item {
+    padding: 5px;
+    cursor: pointer;
+    border-bottom: 1px solid #CECECE;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    max-width: 100%;
+    overflow: hidden;
+    z-index: 99999999; }
+    .wrapper-autocomplete-items .autocomplete-item.item-highlighted {
+      background-color: #E8E8E8; }
+
+@media (max-width: 550px) {
+  table {
+    border: 0; }
+    table thead {
+      display: none; }
+    table tr {
+      margin-bottom: 10px;
+      display: block;
+      border-bottom: 2px solid #ddd; }
+    table td {
+      display: block;
+      text-align: right !important;
+      font-size: 13px;
+      border-bottom: 1px dotted #ccc;
+      min-height: 29px; }
+      table td:last-child {
+        border-bottom: 0; }
+      table td:before {
+        content: attr(data-label);
+        float: left;
+        text-transform: uppercase;
+        font-weight: bold;
+        color: #000000;
+        max-width: 150px;
+        text-align: left; } }

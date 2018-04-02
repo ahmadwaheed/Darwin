@@ -1,0 +1,312 @@
+.wrapper-single-company-view
+	.flexbox
+		display: flex
+	.container-wrapper
+		padding: 40px 20px
+	.aside
+		width: 250px
+		flex: none
+		border-right: 2px solid #CECECE
+		padding-right: 15px
+	.aside-title
+		color: #CECECE
+		margin-bottom: 20px
+		font-weight: 600
+		position: relative
+		&:after
+			content: ""
+			width: 100%
+			height: 2px
+			background: #CECECE
+			display: block
+			position: absolute
+			top: 12px
+			left: 0
+	span
+		position: relative
+		z-index: 2
+		padding-right: 5px
+	.nav-list
+		list-style: none
+		margin: 0
+		padding: 0
+		&__item
+			margin-bottom: 10px
+		&__link
+			color: #727272
+			font-weight: 600
+			cursor: pointer
+			&:hover,
+			&.active
+				text-decoration: underline
+				color: #20A26D
+	.table-title
+		color: #727272
+	.aside-cont
+		flex: 1
+		padding: 0 0 0 20px
+	.table-title
+		font-size: 35px
+		font-weight: 600
+		margin-bottom: 10px
+	.table-box
+		color: #727272
+	.table-head
+		font-weight: 600
+		background: #F5F6F5
+		border: 2px solid #F2F3F2
+		border-bottom: none
+		border-radius: 20px 10px 0 0
+		padding: 5px 15px 8px
+	.table-body
+		border: 2px solid #E5E5E5
+		padding: 10px 15px
+	.table-row
+		display: flex
+		align-items: stretch
+		border: 2px solid #F2F3F2
+		margin-bottom: 5px
+		border-radius: 8px
+	.table-dh
+		background: #eee
+		font-weight: 600
+		padding: 5px 10px 7px
+		flex: none
+		width: 150px
+		display: flex
+		align-items: center
+		justify-content: center
+		text-align: center
+	.table-dd
+		padding: 5px 10px 7px
+		flex: 1
+		display: flex
+		align-items: center
+	.align-right
+		justify-content: flex-start
+
+	.wrapper-notfound-company 
+		display: flex
+		flex-direction: row
+		justify-content: center
+		align-items: center
+		min-height: 300px
+		font-size: 32px
+
+@media (max-width: 800px)  
+	.container-wrapper
+		flex-direction: column
+		.aside
+			display: flex
+			flex-direction: column
+			justify-content: flex-start
+			align-items: flex-start
+			width: 100%
+			padding: 0
+			border: none
+			font-size: 13px
+			.aside-title
+				margin: 0
+				margin-right: 5px
+				border-right: 1px solid #CECECE
+			.nav-list
+				display: flex
+				flex-direction: row
+				.nav-list__item
+					margin: 0
+					padding-right: 5px
+		.aside-cont
+			padding: 0			
+
+@media (max-width: 500px) 
+	.wrapper-single-company-view 
+		.container-wrapper
+			padding: 20px	
+			.table-title
+				font-size: 18px
+				margin-top: 10px
+				&::after
+					height: 0
+		.table-dh
+			justify-content: flex-start
+			text-align: left
+.container 
+    padding: 0 2rem;
+    max-width: 134rem
+    max-width: calc( #{134rem} + 4rem )
+    margin: auto
+
+main
+	padding-top: 2rem
+	min-height: calc(100vh - 7rem)
+	background-color: #f7f8f8
+
+.h2--large
+	font-size: 2rem
+	text-align: center  
+	font-weight: 300
+	margin-bottom: 1.25em
+    
+.modal-tabbed 
+	
+	border-radius: .3rem
+
+
+
+	
+.modal-tabbed__btn 
+    color: #0D2C54
+        
+.modal-tabbed__tabs-wrap 
+    padding-top: 4rem
+
+.modal-tabbed__tabs 
+	box-shadow:	0 30px 40px 0 rgba(6,21,41,0.12)
+	max-height: none
+	
+    
+
+.modal-tabbed--standalone 
+	margin: auto
+	padding-bottom: 10rem
+    
+
+.modal-tabbed--white 
+	background-color: #fff
+	border-radius: 0
+
+.modal-tabbed__header 
+	background-image: none
+	border-bottom: 1px solid #B6CCCC
+	padding: 0
+	position: relative
+	display: flex
+	justify-content:  center
+	align-items:  center
+ 
+    
+    
+.modal-tabbed__btn 
+	outline: 0
+	max-width: 6rem
+	font-size: 1.3rem
+	display: inline-flex
+	align-items: center
+	line-height: 1.2
+	font-weight: 300
+	cursor: pointer
+	&:not(:last-child) 
+		margin-right: 2.5rem
+	
+	&[aria-selected='true'] 
+		font-weight: 500
+		border-bottom: .3rem solid #06B2DD
+        
+    
+.modal-tabbed__ico 
+	display: none
+	margin-right: 1rem
+
+
+
+    
+.modal-tabbed__tab
+	display: none
+	background-color: #fff
+	padding: 4rem 2rem
+	&[aria-hidden='false'] 
+		display: block
+	
+.modal-tabbed__tab-empty 
+	height: 35rem
+	display: flex
+	justify-content: center
+	align-items: center
+        
+    
+.modal-tabbed__tab__empty-wrap 
+	display: flex
+	justify-content: center
+	align-items: center
+	height: 100%
+    
+.modal-tabbed__tab__empty-title 
+	margin-bottom: 0
+	font-size: 2.4rem
+	color: rgba(#B6CCCC, .5)
+    
+@media(min-width: 35.5em) 
+	.container 
+		padding: 0 4%
+		max-width: 134rem
+		max-width: calc( 134rem + 8% )
+		margin: auto
+	
+	.modal-tabbed__ico 
+		display: block
+	
+	.modal-tabbed__btn 
+		max-width: none
+        
+    
+@media(min-width: 48em) 
+	.modal-tabbed__header 
+		padding: 0
+	
+	.modal-tabbed__tab 
+		padding: 4rem
+
+	.modal-tabbed__btn 
+		font-size: 1.6rem
+		&:not(:last-child) 
+			margin-right: 4.5rem
+            
+        
+@media(max-width: 450px)
+	.modal-tabbed__btn 
+		&:not(:last-child) 
+			margin-right: 0px
+			margin-bottom: 10px
+
+	.modal-tabbed__header
+		flex-direction: column
+		display: none
+	
+	.modal-tabbed__tabs-wrap 
+    	padding-top: 0
+
+	.aside-cont	
+		padding-top: 10px
+
+	
+
+@media(max-width: 500px)
+	.wrapper-single-company-view 
+		.table-title
+			font-size: 20px
+			text-align: center
+			display: none
+		.table-body
+			padding: 0
+		.align-right 
+    		justify-content: left
+		.aside-cont 
+			padding: 0
+			padding-top: 10px !important
+		.table-dh
+			width: 110px
+		.table-row
+			margin: 2px
+
+	
+	.modal-tabbed__tab
+		padding: 0px
+    	width: 320px
+		margin-right: 20px
+		margin-left: -10px
+		padding-bottom: 10px
+
+@media(max-width: 365px)
+	.modal-tabbed__tab
+		margin-right: 10px
+		margin-left: -30px

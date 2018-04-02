@@ -1,0 +1,218 @@
+.wrapper-home
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    background-image: url("../../../assets/images/other/compass-bg.jpg")
+    min-height: calc(100vh - 200px)
+    background-repeat: no-repeat
+    background-size: 100%
+
+.wrapper-home-form
+    display: flex
+    flex-direction: column
+    justify-content: center
+    
+    background-color: #fff
+    padding: 20px 40px
+    min-width: 850px
+    &.advanced-search
+        width: 100%
+        padding: 0
+    .home-fome-title
+        text-align: center
+        font-weight: 400
+        font-size: 32px
+        margin: 0
+
+.wrapper-search-results-view
+    .wrapper-home
+        .wrapper-home-form 
+            &.advanced-search
+                border: none 
+
+.wrapper-home-more-filters
+    display: flex
+    flex-direction: row
+    justify-content: flex-end
+    align-items: flex-end
+    width: 100%
+    margin-top: 30px
+    flex-direction: column
+    &.filters-open
+        img.more-filters-icon
+            transform: rotate(180deg)
+    button.more-filters-btn
+        border: none
+        background-color: transparent
+        font-size: 18px
+        color: #2edf8c
+        text-transform: uppercase
+        cursor: pointer
+        font-weight: 600   
+        transition: 0.2s
+        &:focus
+            outline: none
+        &:hover
+            opacity: 0.7     
+        img
+            width: 15px        
+            height: 15px
+            margin-left: 5px;
+
+.modal-save-search-overlay
+    position: fixed
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    background-color: rgba(0,0,0,0.5)
+    z-index: 11
+
+.wrapper-modal-save-search
+    position: absolute
+    top: 100px
+    left: 50%
+    width: 30%
+    max-width: 600px
+    min-width: 500px
+    transform: translateX(-50%)
+    z-index: 12
+
+.modal-save-search,
+.wrapper-select-saved-query
+    background-color: #FFFFFF    
+    width: 100%
+    height: 100%
+    z-index: 1
+    padding: 50px
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    .errors-save-query
+        min-height: 25px
+        align-self: flex-start
+        color: #e00c0c
+    .modal-save-search-title
+        font-size: 24px
+        font-weight: 300
+        margin: 0
+    .save-search-field
+        width: calc(100% - 30px)
+        border: none
+        padding: 10px 15px
+        color: #383838
+        background-color: #E8E8E8
+        border-radius: 3px
+        font-size: 18px
+        font-weight: 300
+        &:focus
+            outline: none
+        &:not(:last-child)
+            margin-bottom: 20px
+        &::-webkit-input-placeholder,
+        &::-moz-placeholder,
+        &:-ms-input-placeholder,
+        &:-moz-placeholder
+            color: #767676
+    textarea
+        width: calc(100% - 30px)
+        min-width: calc(100% - 30px)
+        max-width: calc(100% - 30px)
+        max-height: 200px
+        min-height: 200px
+    .wrapper-save-search-btn
+        display: flex
+        flex-direction: row
+        justify-content: center
+        align-items: center
+        width: 100%
+        padding: 10px 0   
+    .save-search-btn
+        font-size: 18px
+        text-transform: uppercase
+        border: none
+        outline: none
+        padding: 10px 20px
+        min-width: 120px
+        border-radius: 4px
+        cursor: pointer
+        transition: .2s
+        &.btn-save
+            background-color: #2edf8c
+            color: #FFFFFF
+            &:hover
+                background-color: #27c77c   
+        &.btn-cancel
+            border: 1px solid #2edf8c
+            color: #2edf8c 
+            margin-right: 20px   
+            &:hover
+                background-color: #f5f0f0
+    .saved-query-list
+        text-align: left
+        width: 100%
+        list-style: none
+        padding: 0
+        .saved-query-item
+            padding: 10px 20px
+            font-size: 18px
+            font-weight: 400
+            transition: .2s
+            cursor: pointer
+            border-bottom: 1px solid #efeeee
+            min-height: 40px
+            &:hover
+                background-color: #f7f7f7
+            .description-saved-query
+                font-size: 14px
+                color: #6f6a6a
+                font-weight: 400    
+
+.wrapper-about-us-section
+    display: flex
+    flex-direction: column
+    align-items: center
+    padding: 0 20px
+    h3.title-about-us
+        width: 100%
+        max-width: 1500px
+        font-size: 32px
+        font-weight: 300
+    .wrapper-content-about-us
+        width: 100%
+        max-width: 1500px
+        background-image: url("../../../assets/images/other/network.jpg")
+        background-size: 50%
+        background-repeat: no-repeat
+        background-position: top right
+        padding-bottom: 200px
+        padding-top: 50px
+        p.about-us-text
+            width: 50%
+            max-width: 600px
+            font-size: 18px
+
+@media (max-width: 1200px)  
+    .wrapper-about-us-section    
+        .wrapper-content-about-us
+            background-position: 100% 10%   
+
+@media (max-width: 1050px)  
+    .wrapper-home   
+        background-size: cover
+        background-position: center
+
+@media (max-width: 800px)  
+    .wrapper-about-us-section
+        .wrapper-content-about-us
+            background-image: none
+            p.about-us-text
+                width: 100%
+                max-width: 100%
+
+@media (max-width: 550px)  
+    .wrapper-home
+        justify-content: center
+

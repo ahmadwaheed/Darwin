@@ -1,0 +1,675 @@
+.wrapper-filters
+    display: flex
+    flex-direction: column
+    width: 100%
+    .advanced-search-title
+        padding: 20px
+        font-size: 32px
+        font-weight: 400
+        color: #45454C
+        margin: 0
+        border-bottom: 1px solid #CECECE
+
+.wrapper-advanced-search-content
+    display: flex
+    justify-content: space-between
+    align-items: flex-start 
+    border-bottom: 2px solid #CECECE       
+
+.wrapper-advanced-search-keywords
+    display: flex
+    flex-direction: column
+    margin-top: 10px
+    justify-content: flex-start
+    align-items: flex-start
+    width: 100%
+
+p.title-advanced-search,
+.title-advanced-search
+    font-size: 17px
+    color: #454545
+    font-weight: 600
+    margin-bottom: 20px
+    text-align: center
+
+.wrapper-keywords-search
+    width: 100%
+
+.wrapper-keywords
+    display: flex
+    flex-direction: column
+    justify-content: flex-start
+    align-items: flex-start
+    margin-bottom: 20px
+    .filters-input-wrap
+        display: flex
+        flex-direction: column
+        padding: 0 10px
+        width: 100%
+        label
+            padding: 10px 0
+            font-size: 18px 
+        input
+            padding: 10px 15px
+            color: #383838
+            background-color: #ffffff
+            border-radius: 4px
+            border: 1px solid #ebe1b6
+            font-size: 16px
+            font-weight: 300
+            line-height: 22px      
+            box-shadow: 0 5px 30px rgba(156, 160, 171, 0.25)
+            &:focus
+                outline: none
+
+.wrapper-search-category
+    display: flex
+    flex-direction: column
+    width: 100%                
+
+.wrapper-search-category-checkboxes
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+    margin-top: 10px    
+    label
+        input
+            margin-right: 15px
+            width: 15px
+            height: 15px
+        span
+            font-size: 18px    
+
+.wrapper-company-criteria
+    display: flex            
+    flex-direction: column
+    padding: 30px
+    width: 50%
+    border-left: 2px solid #CECECE
+
+.wrapper-company-criteria-content
+    display: flex
+    width: 100%
+    
+.wrapper-search-industry,
+.wrapper-location
+    display: flex
+    flex-direction: column
+    width: 100%
+
+
+.wrapper-industry-input
+    position: relative
+    z-index: 1
+    .wrapper-autocomplete-items
+        position: absolute
+        top: 38px
+        background-color: #FFF 
+        border: 1px solid #DBDBDB
+        border-top: none
+        border-bottom: none
+        width: calc(80% + -4px)
+        .autocomplete-item
+            padding: 5px
+            cursor: pointer
+            border-bottom: 1px solid #DBDBDB
+            text-overflow: ellipsis
+            white-space: nowrap
+            max-width: 100%
+            overflow: hidden
+            z-index: 1
+            &.item-highlighted
+                background-color: #E8E8E8
+
+    .label-industry-input
+        padding: 10px 0
+        font-size: 18px
+    .industry-input
+        width: 100%
+        padding: 8px 5px
+        color: #383838
+        background-color: #ffffff
+        border: none
+        border-bottom: 2px solid #8B8B8B
+        font-size: 18px
+        font-weight: 300
+        line-height: 20px
+        &:focus
+            outline: none
+
+.wrapper-selected-industry
+    display: flex
+    flex-direction: row
+    flex-wrap: wrap
+    justify-content: flex-start
+    align-items: flex-start
+    padding: 10px 0
+    z-index: 0
+    position: relative
+    margin: 10px 0
+
+.selected-item
+    padding: 6px 6px 6px 25px
+    margin: 5px 5px 5px 0
+    color: #ffffff
+    font-weight: 100
+    border-radius: 4px
+    font-size: 18px
+    background-color: #00c8b4
+    position: relative
+    text-overflow: ellipsis
+    white-space: nowrap
+    max-width: 200px
+    max-height: 
+    overflow: hidden
+    span.cross
+        position: absolute
+        left: 6px
+        top: 50%
+        font-size: 32px
+        transform: translateY(-50%) rotate(45deg)
+        cursor: pointer
+        user-select: none
+
+.wrapper-industry-tree-component
+    max-height: 400px
+    overflow-y: scroll
+
+.wrapper-industry-tree
+    list-style: none
+    padding: 0 10px        
+    display: flex
+    flex-direction: column
+    .industry-tree-item
+        font-size: 18px
+        color: #8b8b8b
+        display: flex
+        flex-direction: column
+        justify-content: flex-start
+        align-items: flex-start
+        margin-top: 5px
+        .wrapper-industry-tree-item-content
+            display: flex
+            flex-direction: row
+            justify-content: flex-start
+            align-items: center
+            font-size: 16px
+        span
+            margin-right: 10px
+            cursor: pointer
+            font-size: 24px
+            user-select: none
+            color: #2edf8c
+        img
+            width: 12px
+            margin-right: 10px
+            cursor: pointer
+            transition: .2s    
+            &.minus
+                transform: rotate(90deg)
+        input
+            margin-right: 10px
+        .industry-tree-item
+            padding-left: 20px    
+
+.wrapper-location
+    position: relative
+    z-index: 1
+    .wrapper-location-input
+        position: relative
+        z-index: 1
+    .wrapper-autocomplete-items
+        position: absolute
+        top: 38px
+        background-color: #FFF 
+        border: 1px solid #DBDBDB
+        border-bottom: none
+        border-top: none
+        width: calc(80% + -4px)
+        .autocomplete-item
+            padding: 5px
+            cursor: pointer
+            border-bottom: 1px solid #DBDBDB
+            text-overflow: ellipsis
+            white-space: nowrap
+            max-width: 100%
+            overflow: hidden
+            z-index: 1
+            &.item-highlighted
+                background-color: #E8E8E8
+    .label-industry-input
+        padding: 10px 0
+        font-size: 18px
+    .location-input
+        width: 100%
+        padding: 8px 5px
+        color: #383838
+        background-color: #ffffff
+        border: none
+        border-bottom: 2px solid #8B8B8B
+        font-size: 18px
+        font-weight: 300
+        line-height: 20px
+        &:focus
+            outline: none
+    .wrapper-selected-location
+        display: flex
+        flex-direction: row
+        flex-wrap: wrap
+        padding: 10px 0
+        position: relative
+        z-index: 0
+
+.wrapper-status
+    display: flex
+    flex-direction: column
+    .title-status
+        padding: 10px 0
+        font-size: 18px
+    label
+        font-size: 14px
+        margin-bottom: 10px
+        input
+            margin-right: 15px
+            width: 15px
+            height: 15px
+
+.wrapper-dispay
+    display: flex
+    padding: 30px 0px
+    border-bottom: 2px solid #CECECE
+    .title-dispay
+        font-size: 20px
+        color: #454545
+        font-weight: 400    
+        width: 25%        
+    .wrapper-display-checkbox
+        display: flex
+        label
+            display: flex
+            font-size: 18px
+            margin-right: 60px
+            input
+                margin-right: 15px
+            
+
+.wrapper-advanced-search-btns
+    display: flex
+    justify-content: flex-end
+    width: 100%
+    flex-flow: column
+    margin-top: 20px
+    button
+        font-size: 22px 
+        font-weight: 300
+        border: none
+        background-color: #00c8b4
+        color: #ffffff
+        margin-right: 20px
+        padding: 10px 20px
+        border-radius: 4px
+        min-width: 150px
+        cursor: pointer
+        &.search-btn
+            background-color: #00f08a                
+        &:focus
+            outline: none    
+
+.react-tagsinput
+    width: 100%
+    background-color: #fff
+    color: #383838
+    overflow: hidden
+    padding: 10px 15px
+    margin-top: 5px
+    font-weight: 300
+    line-height: 22px
+    box-shadow: 0 5px 30px rgba(156, 160, 171, 0.25)
+    border-radius: 4px
+    border: 1px solid #ebe1b6
+
+.react-tagsinput-input 
+    background: transparent
+    border: 0
+    color: #383838
+    font-size: 16px
+    font-weight: 300
+    outline: none
+    width: 80px
+
+.wrap-div-flex
+    display: flex
+    flex-direction: column
+    width: 100%
+
+.react-tagsinput-tag 
+    border-radius: 3px
+    color: #fff
+    background-color: #00c8b4
+    display: inline-block
+    font-size: 13px
+    font-weight: 500
+    margin-right: 5px
+
+.react-tagsinput-tag a:before 
+    content: "x"
+
+.react-tagsinput-remove 
+    cursor: pointer
+    font-weight: bold
+    color: #fff
+    padding: 1px
+
+.react-tags-text
+    padding: 2px
+
+.wrapper-home-form
+    align-items: intial !important
+.container-fluid 
+    width: 100%
+    padding-right: 15px
+    padding-left: 15px
+    margin-right: auto
+    margin-left: auto
+
+
+.row 
+    display: -webkit-box
+    display: -ms-flexbox
+    display: flex
+    -ms-flex-wrap: wrap
+    margin-right: -15px
+    margin-left: -15px
+
+.col-lg-3, .col-xl-2, .col-lg-9 
+    position: relative
+    width: 100%
+    min-height: 1px
+    padding-right: 15px
+    padding-left: 15px
+
+.col-lg-3 
+    -webkit-box-flex: 0
+    -ms-flex: 0 0 30%
+    flex: 0 0 30%
+    max-width: 30%
+
+.col-lg-9 
+    -webkit-box-flex: 0
+    -ms-flex: 0 0 70%
+    flex: 0 0 70%
+    max-width: 70%
+  
+
+.col-xl-2 
+    -webkit-box-flex: 0
+    -ms-flex: 0 0 21.666667%
+    flex: 0 0 21.666667%
+    max-width: 21.666667%
+
+.col-xl-10 
+    -webkit-box-flex: 0
+    -ms-flex: 0 0 78.333333%
+    flex: 0 0 78.333333%
+    max-width: 78.333333%
+
+ 
+.px-lg-0 
+    padding-right: 0 !important
+
+aside,section 
+    display: block
+
+.filter_btn 
+    background: #00c8b4
+    color: #fff
+    width: 130px
+    height: 40px
+    margin-top: 16px
+    display: none
+    align-items: center
+    justify-content: left
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.11)
+    padding: 0 15px
+    border-radius: 2px
+    font-size: 16px
+    text-transform: uppercase
+.sidebar112 
+    border-right: 1px solid #CECECE
+    height: 100vh
+
+.flexbox-container 
+    display: -ms-flex
+    display: -webkit-flex
+    display: flex
+
+
+.flexbox-container > div 
+    width: 50%
+    padding: 10px
+
+
+.flexbox-container > div:first-child 
+    margin-right: 20px
+
+.filters-selectors, .filters-selected
+    margin-top: 10px
+
+.filters-selectors > .selector-div ~ .selector-div
+    margin-top: 10px
+
+.filters-selectors
+    border-right: 1px solid rgba(0,0,0,.05)
+
+.selector-div 
+    padding-top: 5px
+    padding-bottom: 5px
+    outline: 0
+
+.selected-div 
+    padding-top: 5px
+    padding-bottom: 5px
+    outline: 0
+    
+
+.selector-div:hover, .selected-div:hover
+    background-color: rgba(0,0,0,.05)
+    cursor: pointer
+
+.selector-div:focus 
+    background-color: rgba(0,0,0,.1)
+
+.filters-selectors > .selected-div ~ .selected-div
+    margin-top: 10px
+
+.selector-a
+    
+    cursor: pointer
+
+
+
+.selector-a-span 
+    float: right
+
+.selector-chevron
+    margin-right: 10px
+
+
+.add-filter
+    margin-top: 20px
+    outline: 0
+
+.align-filters
+    display: flex
+    flex-flow: column
+
+i.fa-plus 
+    display: inline-block
+    border-radius: 60px
+    box-shadow: 0px 0px 2px #888
+    padding: 0.5em 0.6em
+    background-color: #228ae6
+    color: #fff
+    cursor: pointer
+
+.ui.modal
+    z-index: 100001 !important
+    
+
+
+
+@mixin transition($transition) 
+    -webkit-transition: $transition
+    -moz-transition: $transition
+    -ms-transition: $transition
+    -o-transition: $transition
+    transition: $transition
+
+@mixin transform($transform) 
+    -webkit-transform: $transform
+    -moz-transform: $transform
+    -ms-transform: $transform
+    -o-transform: $transform
+    transform: $transform
+
+@media (max-width: 1200px)  
+    .wrapper-advanced-search-content
+        flex-direction: column            
+        .wrapper-advanced-search-keywords
+            width: 100%
+        .wrapper-company-criteria
+            width: 100%    
+    .wrapper-company-criteria-content
+        flex-direction: column        
+    .wrapper-search-industry
+        width: 100%
+        margin-bottom: 20px
+    .wrapper-location
+        width: 100%
+
+@media (max-width: 992px) 
+    .col-xl-10
+        flex: 0 0 100%
+        max-width: 100%
+    .col-lg-9
+        width: 100%
+        max-width: 100%
+        padding: 0
+    .col-lg-3, .col-xl-2, .col-lg-9
+        padding: 0
+    .col-lg-3
+        flex: 0 0 0%
+        max-width: 0%
+    .filter_btn
+        float: right
+    .column-btn
+        margin-top: 10px
+    .ui.modal
+        z-index: 100001 !important
+    .wrapper-advanced-search-keywords
+        padding: 10px
+    .filter_btn:after 
+        content: ""
+        display: block
+        width: 100%
+        height: 100%
+        position: fixed
+        background: rgba(0, 0, 0, 0.30)
+        z-index: 99
+        top: 0
+        left: 0
+        opacity: 0
+        visibility: hidden
+        
+    .wrapper-advanced-search-btns
+        padding-left: 20px
+        padding-bottom: 20px
+    
+  
+    .filter_btn.active:after 
+        opacity: 1
+        visibility: visible
+  
+    .filter_btn 
+        display: flex !important
+      
+    .sidebar112 
+  
+        display: flex
+        border-right: none
+      
+  
+        .ad_sidebar 
+            display: none
+  
+        > .widget112 
+            overflow-y: auto
+            position: fixed
+            z-index: 99999
+            top: 0px
+            height: 100
+            margin: 0
+            left: 0
+            background-color: #fff
+            width: 280px
+            @include transition(all 0.25s ease-in-out)
+            @include transform(translateX(-100%))
+  
+        > .widget112.open 
+  
+            @include transform(translateX(0%))
+
+@media (max-width: 767px)
+    .sidebar112 
+        .filter_btn 
+            width: 100%
+            justify-content: right
+
+
+
+@media only screen and (min-width: 768px)
+    .ui.modal 
+        width: 70% !important
+
+@media only screen and (max-width: 767px)
+
+    .ui.modal 
+        width: 75% !important
+
+    
+
+@media (max-width: 785px)  
+    .wrapper-dispay
+        flex-direction: column
+        .title-dispay
+            margin-bottom: 10px 
+        .wrapper-display-checkbox    
+            label
+                display: flex
+                margin-bottom: 0  
+                margin-right: 10px
+
+@media (max-width: 500px)  
+    
+    .wrapper-status
+        margin-top: 10px
+        flex-direction: row
+        align-items: center
+        label
+            margin-bottom: 0
+        .title-status
+            margin-right: 10px
+    .wrapper-display-checkbox  
+        flex-direction: column
+        label
+            display: flex
+    .wrapper-search-category
+        align-items: center    
+    .wrapper-search-category-checkboxes
+        flex-direction: column
+    .wrapper-industry-input 
+        .industry-input
+            width: 100%
+    .wrapper-location
+        .location-input        
+            width: 100%         

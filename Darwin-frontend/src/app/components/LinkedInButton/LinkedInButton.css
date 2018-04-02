@@ -1,0 +1,28 @@
+.linkedin-signup {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: #0070ad;
+  border: none;
+  outline: none;
+  box-shadow: none;
+  padding: 10px 20px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.2s; }
+  .linkedin-signup span {
+    font-size: 20px;
+    color: #ffffff;
+    font-weight: 300;
+    font-size: 18px;
+    padding-left: 10px;
+    cursor: pointer; }
+  .linkedin-signup img {
+    width: 20px;
+    height: 20px;
+    border-right: 1px solid #CECECE;
+    padding-right: 10px;
+    cursor: pointer; }
+  .linkedin-signup:hover {
+    background-color: #1987c3; }

@@ -1,0 +1,78 @@
+.wrapper-employer-form-component {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 70px;
+  margin-top: 100px;
+  border: 1px solid #CECECE; }
+
+.title-employer-form {
+  font-size: 20px;
+  font-weight: 300;
+  color: #6a6a6a; }
+
+.submit-employer {
+  color: #FFFFFF;
+  background-color: #2edf8c;
+  font-size: 18px;
+  text-transform: uppercase;
+  border: none;
+  outline: none;
+  padding: 15px 20px;
+  margin-top: 100px;
+  min-width: 250px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.2s; }
+  .submit-employer:hover {
+    background-color: #27c77c; }
+
+.create-new-employer {
+  margin-top: 20px;
+  color: #2edf8c;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: 600;
+  cursor: pointer; }
+  .create-new-employer:hover {
+    text-decoration: underline; }
+
+.employer-autocomplete {
+  width: calc(100% - 40px);
+  border: none;
+  padding: 10px 15px;
+  color: #383838;
+  background-color: #E8E8E8;
+  border-radius: 3px;
+  font-size: 18px;
+  font-weight: 300; }
+  .employer-autocomplete:focus {
+    outline: none; }
+  .employer-autocomplete:not(:last-child) {
+    margin-bottom: 20px; }
+  .employer-autocomplete::-webkit-input-placeholder, .employer-autocomplete::-moz-placeholder, .employer-autocomplete:-ms-input-placeholder, .employer-autocomplete:-moz-placeholder {
+    color: #767676; }
+
+@media (max-width: 550px) {
+  .wrapper-add-employer-view .wrapper-employer-form-component {
+    min-width: 0;
+    padding: 20px 50px;
+    width: 380px; }
+    .wrapper-add-employer-view .wrapper-employer-form-component .title-employer-form {
+      text-align: center; } }
+
+@media (max-width: 430px) {
+  .wrapper-add-employer-view .wrapper-employer-form-component {
+    margin: 30px; }
+  .wrapper-add-employer-view .wrapper-employer-form-component {
+    min-width: 0;
+    padding: 20px 50px;
+    width: 320px; }
+  .wrapper-add-employer-view .create-new-employer {
+    text-align: center; }
+  .wrapper-add-employer-view button.submit-employer,
+  .wrapper-add-employer-view button.submit-create-employer {
+    margin-top: 50px;
+    padding: 10px 20px;
+    min-width: 200px; } }

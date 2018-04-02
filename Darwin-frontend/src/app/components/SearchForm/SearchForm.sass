@@ -1,0 +1,110 @@
+.wrapper-home-search-autocomplete
+    width: 100%
+    position: relative
+    &.no-border
+        .wrapper-autocomplete-items
+            border: none
+    .wrapper-autocomplete-items
+        position: absolute
+        top: 66px
+        background-color: #FFF 
+        border: 1px solid #DBDBDB
+        width: calc(100% + 2px)
+        .autocomplete-item
+            padding: 5px
+            cursor: pointer
+            border-bottom: 1px solid #DBDBDB
+            text-overflow: ellipsis
+            white-space: nowrap
+            max-width: 100%
+            overflow: hidden
+            &.item-highlighted
+                background-color: #E8E8E8
+.wrapper-search-results-view
+    .wrapper-home
+        margin-top: 100px
+        &.advanced-search
+            margin-top: 0
+
+.wrapper-home-search-field
+    display: flex
+    flex-direction: row
+    justify-content: center
+    align-items: center
+    margin-top: 30px
+    width: 100%
+    position: relative
+    box-shadow: 0 5px 30px rgba(156, 160, 171, 0.25) 
+    img.search-icon
+        position: absolute
+        top: 50%
+        left: 15px
+        width: 25px
+        height: 26px
+        transform: translateY(-50%)
+        z-index: 1
+    input.search-home-field
+        padding: 15px 155px 15px 50px
+        color: #383838
+        background-color: #ffffff
+        border-radius: 4px
+        border: 1px solid #DBDBDB 
+        font-size: 14px
+        font-weight: 300
+        line-height: 35px
+        width: calc(100% - 205px)
+        &:focus
+            outline: none
+    img.cross-icon
+        position: absolute
+        top: 50%
+        right: 130px
+        width: 15px
+        height: 15px
+        transform: translateY(-50%)
+        z-index: 1      
+        cursor: pointer
+    button.search-btn-home
+        position: absolute
+        top: 50%
+        right: 12px
+        border: none
+        color: #ffffff
+        background-color: #00f495
+        font-size: 18px
+        padding: 10px
+        width: 100px
+        font-weight: 300
+        border-radius: 4px
+        cursor: pointer
+        transition: 0.2s
+        transform: translateY(-50%)
+        &:focus
+            outline: none
+                
+
+@media (max-width: 875px)  
+    .wrapper-home-form  
+        min-width: 0
+
+                
+@media (max-width: 550px)  
+    .wrapper-home-form  
+        padding: 20px 10px
+        .home-fome-title
+            text-align: center
+            font-size: 24px
+
+    .wrapper-home-search-autocomplete
+        input.search-home-field
+            padding-top: 10px
+            padding-bottom: 10px
+    ::-webkit-input-placeholder 
+        opacity: 0
+    
+    ::-moz-placeholder
+        opacity: 0
+
+    :-ms-input-placeholder 
+        opacity: 0
+    

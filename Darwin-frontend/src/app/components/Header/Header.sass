@@ -1,0 +1,102 @@
+.wrapper-header-component
+    width: 100%
+    position: fixed
+    top: 0
+    left: 0
+    border-bottom: 1px solid #CECECE
+    z-index: 10
+    background: #fff
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.1)
+
+.wrapper-header
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+    align-items: center
+    padding-right: 15px 
+    height: 75px
+    h2.logo-title
+        margin: 0
+        font-weight: 400
+        user-select: none
+        cursor: pointer
+
+nav.header-nav
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+    align-items: center
+    .header-links
+        text-decoration: none
+        font-size: 18px
+        font-weight: 400
+        min-width: 130px
+        text-align: center
+        padding: 10px
+        border-radius: 4px
+        transition: 0.2s
+        user-select: none
+        cursor: pointer
+        &:hover
+            background-color: #f1ecec
+        &.login-link
+            color: #383838
+        &.add-employer-link
+            background-color: #34c2e3
+            color: #FFFFFF
+            margin-right: 15px  
+            &:hover 
+                background-color: #38aeca  
+        &.signup-link
+            margin-right: 15px
+            color: #FFFFFF
+            background-color: #2edf8c
+            &:hover
+                background-color: #27c77c;
+
+.header-user-menu
+    position: relative
+    .username
+        border: none
+        font-size: 16px
+        cursor: pointer
+        line-height: 32px
+        background-color:#fff
+        &:focus 
+            outline: none
+    &:hover 
+        .wrapper-dropdown
+            display: block
+    .wrapper-dropdown
+        padding: 10px
+        position: absolute
+        display: none
+        top: 30px
+        width: 150px;
+        right: 0;
+        text-align: center
+        background-color: #ffffff
+        border-radius: 4px
+        transition: 0.5s
+        box-shadow: 0 5px 30px rgba(156, 160, 171, 1)
+        .logout-btn
+            cursor: pointer
+            &:hover
+                text-decoration: underline
+
+#logongj
+    width: 250px
+    cursor: pointer
+
+@media (max-width: 520px) 
+    .wrapper-header  
+        padding-right: 10px   
+        justify-content: center
+    nav.header-nav
+        .header-links              
+            min-width: 0
+            font-size: 14px
+            &.signup-link
+                margin-right: 0px
+                min-width: 80px
+
